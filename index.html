@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shanthini Nadeson — Computer Science (Mobile Computing) Undergraduate seeking a Software Engineering or Technology Internship.">
+    <title>Shanthini Nadeson | Software Engineering Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="brand" aria-label="Shanthini Nadeson Home">
+                <span class="brand-mark">SN</span>
+                <span class="brand-text">Shanthini<span class="accent">.</span></span>
+            </a>
+
+            <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark and light mode" title="Toggle Dark/Light Mode">
+                    <!-- Sun Icon (shown in dark mode) -->
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                    <!-- Moon Icon (shown in light mode) -->
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+
+                <a href="Shanthini-Nadeson_Resume.pdf" download class="btn btn-primary btn-sm nav-cv">
+                    <span>Resume</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                </a>
+
+                <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-grid-bg" aria-hidden="true"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="status-pill">
+                        <span class="status-dot"></span>
+                        Seeking Software Engineering / Technology Internship
+                    </div>
+                    <p class="hero-greeting">Hi, I'm Shanthini Nadeson</p>
+                    <h1 class="hero-title">
+                        Mobile &amp; Full-Stack<br>
+                        <span class="hero-outline">CS Developer</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Computer Science (Mobile Computing) undergraduate at UMT with a <strong>3.72 CGPA</strong>.
+                        Building practical software across <strong>Flutter/Firebase</strong>, <strong>Java/MySQL</strong>,
+                        REST APIs, and multiplayer <strong>Godot</strong> applications.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                        <a href="Shanthini-Nadeson_Resume.pdf" download class="btn btn-outline-light">
+                            Download Resume
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/NShanthini394" target="_blank" rel="noopener noreferrer" class="social-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/shanthini-nadeson" target="_blank" rel="noopener noreferrer" class="social-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="mailto:shanthininadeson394@gmail.com" class="social-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            Email
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Developer Code Card (Option B Visual) -->
+                <div class="hero-visual">
+                    <div class="code-card">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="code-filename">shanthini_profile.json</span>
+                        </div>
+                        <pre class="code-body"><code><span class="tok-brace">{</span>
+  <span class="tok-key">"name"</span>: <span class="tok-str">"Shanthini Nadeson"</span>,
+  <span class="tok-key">"degree"</span>: <span class="tok-str">"BSc. CS (Mobile Computing)"</span>,
+  <span class="tok-key">"university"</span>: <span class="tok-str">"UMT, Malaysia"</span>,
+  <span class="tok-key">"cgpa"</span>: <span class="tok-num">3.72</span>,
+  <span class="tok-key">"deansList"</span>: <span class="tok-str">"4 Consecutive Semesters"</span>,
+  <span class="tok-key">"coreStack"</span>: <span class="tok-brace">[</span>
+    <span class="tok-str">"Java &amp; MySQL"</span>,
+    <span class="tok-str">"Flutter &amp; Firebase"</span>,
+    <span class="tok-str">"JavaScript &amp; REST APIs"</span>,
+    <span class="tok-str">"Godot 4 &amp; HMS"</span>
+  <span class="tok-brace">]</span>,
+  <span class="tok-key">"location"</span>: <span class="tok-str">"Georgetown, Penang"</span>,
+  <span class="tok-key">"openToInternship"</span>: <span class="tok-bool">true</span>
+<span class="tok-brace">}</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats / Highlights Strip -->
+        <section class="stats-strip" aria-label="Key Academic and Technical Highlights">
+            <div class="container stats-grid">
+                <div class="stat-item reveal">
+                    <span class="stat-value">3.72</span>
+                    <span class="stat-label">CGPA (out of 4.00)</span>
+                </div>
+                <div class="stat-item reveal">
+                    <span class="stat-value">4&times;</span>
+                    <span class="stat-label">Dean's List (2024–2026)</span>
+                </div>
+                <div class="stat-item reveal">
+                    <span class="stat-value">5</span>
+                    <span class="stat-label">Projects &amp; Competitions</span>
+                </div>
+                <div class="stat-item reveal">
+                    <span class="stat-value">2</span>
+                    <span class="stat-label">Cisco Certifications</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section class="section" id="about">
+            <div class="container about-grid">
+                <!-- Single Personal Photo Column -->
+                <div class="about-photo-wrap reveal">
+                    <div class="photo-frame">
+                        <img
+                            src="images/profile.jpg"
+                            alt="Portrait of Shanthini Nadeson"
+                            class="profile-img"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                        <div class="photo-fallback" aria-hidden="true">
+                            <span class="fallback-initials">SN</span>
+                            <span class="fallback-hint">Add images/profile.jpg</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biography & Education Column -->
+                <div class="about-content reveal">
+                    <span class="section-eyebrow">About Me</span>
+                    <h2 class="section-title">Analytical Problem-Solver Building Practical Software</h2>
+                    <p class="about-text">
+                        I am a Bachelor of Computer Science (Mobile Computing) with Honours undergraduate at
+                        <strong>Universiti Malaysia Terengganu (UMT)</strong>, expected to graduate in October 2028.
+                        With a strong foundation in Object-Oriented Programming (OOP), full-stack development,
+                        relational databases, and REST API integration, I enjoy turning complex requirements into
+                        reliable applications.
+                    </p>
+                    <p class="about-text">
+                        Whether leading a serverless Progressive Web App, engineering Java/MySQL MVC workflows,
+                        or developing cross-platform Flutter and multiplayer Godot applications, I bring
+                        detail-oriented troubleshooting, punctuality, and collaborative project execution.
+                    </p>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">University</span>
+                            <span class="info-value">Universiti Malaysia Terengganu (UMT)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Expected Graduation</span>
+                            <span class="info-value">October 2028</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Georgetown, Penang, Malaysia</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Languages</span>
+                            <span class="info-value">English, Malay, Tamil (Fluent) &middot; Mandarin (Basic)</span>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="Shanthini-Nadeson_Resume.pdf" download class="btn btn-secondary">Download Resume (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="section section-alt" id="skills">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Capabilities</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-desc">Core languages, frameworks, and tools applied across academic engineering projects and mobile competitions.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <div class="skill-card-head">
+                            <span class="skill-icon">&lt;/&gt;</span>
+                            <h3>Programming</h3>
+                        </div>
+                        <div class="tag-list">
+                            <span class="tag">Java</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">GDScript</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-head">
+                            <span class="skill-icon">&#9635;</span>
+                            <h3>Mobile &amp; Game</h3>
+                        </div>
+                        <div class="tag-list">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">HUAWEI Mobile Services (HMS)</span>
+                            <span class="tag">Godot 4</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-head">
+                            <span class="skill-icon">&#9783;</span>
+                            <h3>Web &amp; Backend</h3>
+                        </div>
+                        <div class="tag-list">
+                            <span class="tag">Java Servlets</span>
+                            <span class="tag">JSP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">JDBC</span>
+                            <span class="tag">JSON / REST APIs</span>
+                            <span class="tag">HTML5 &amp; CSS3</span>
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">IndexedDB</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-head">
+                            <span class="skill-icon">&#8644;</span>
+                            <h3>Architecture &amp; Networking</h3>
+                        </div>
+                        <div class="tag-list">
+                            <span class="tag">OOP</span>
+                            <span class="tag">MVC Architecture</span>
+                            <span class="tag">WebSocket</span>
+                            <span class="tag">ENet</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-head">
+                            <span class="skill-icon">&#9881;</span>
+                            <h3>Tools &amp; Platforms</h3>
+                        </div>
+                        <div class="tag-list">
+                            <span class="tag">Git</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">Apache Tomcat</span>
+                            <span class="tag">Gemini API</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Competitions Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Portfolio</span>
+                    <h2 class="section-title">Featured Projects &amp; Competitions</h2>
+                    <p class="section-desc">Selected mobile, full-stack, and competition projects showcasing backend logic, API integration, and system design.</p>
+                </div>
+
+                <!-- Category Filter Tabs -->
+                <div class="filter-bar reveal" role="tablist" aria-label="Filter projects by category">
+                    <button class="filter-btn active" data-filter="all" type="button" role="tab" aria-selected="true">All (5)</button>
+                    <button class="filter-btn" data-filter="mobile" type="button" role="tab" aria-selected="false">Mobile &amp; Game</button>
+                    <button class="filter-btn" data-filter="web" type="button" role="tab" aria-selected="false">Web &amp; Full-Stack</button>
+                    <button class="filter-btn" data-filter="competition" type="button" role="tab" aria-selected="false">Competitions</button>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1: AskAgain -->
+                    <article class="project-card reveal" data-category="mobile">
+                        <div class="project-top">
+                            <span class="project-badge">Individual Project</span>
+                            <span class="project-type">Mobile App</span>
+                        </div>
+                        <h3 class="project-title">AskAgain: Active Recall &amp; Spaced Repetition</h3>
+                        <p class="project-desc">
+                            Cross-platform learning app aligned with SDG 4 supporting science and social-science learners from primary school to PhD level.
+                        </p>
+                        <ul class="project-points">
+                            <li>Built flashcard and Q&amp;A modes featuring forgetting-curve spaced repetition and auto-blank cloze evaluation.</li>
+                            <li>Designed hybrid PDF document scanning combining non-AI extraction with conditional Gemini API parsing to reduce hallucination risk.</li>
+                        </ul>
+                        <div class="tag-list project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Gemini API</span>
+                        </div>
+                        <div class="project-actions">
+                            <!-- WHEN YOUR YOUTUBE DEMO IS READY: replace this span with:
+                            <a href="YOUR_YOUTUBE_URL" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Watch Demo</a>
+                            -->
+                            <span class="btn-placeholder">Demo Video Coming Soon</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Nenek Kebayan -->
+                    <article class="project-card reveal" data-category="mobile competition">
+                        <div class="project-top">
+                            <span class="project-badge">5th UXHMAC 2026</span>
+                            <span class="project-type">Multiplayer Game</span>
+                        </div>
+                        <h3 class="project-title">Nenek Kebayan: Siapa Pengkhianat?</h3>
+                        <p class="project-desc">
+                            Malaysian folklore-inspired multiplayer social-deduction mobile game co-developed with Team Gadis Kampung (UMT) for the HUAWEI GameCenter Mobile App Competition.
+                        </p>
+                        <ul class="project-points">
+                            <li>Co-developed 3 game modes, 3 maps, and 12 shared tasks backed by a server-validated game state.</li>
+                            <li>Integrated HMS Account Kit (HUAWEI ID), Scan Kit (QR room joining), and ML Kit translation (EN, BM, ZH, TA).</li>
+                        </ul>
+                        <div class="tag-list project-tags">
+                            <span class="tag">Godot 4.7.2</span>
+                            <span class="tag">GDScript</span>
+                            <span class="tag">WebSocket</span>
+                            <span class="tag">ENet</span>
+                            <span class="tag">HMS</span>
+                        </div>
+                        <div class="project-actions">
+                            <!-- WHEN YOUR YOUTUBE DEMO IS READY: replace this span with:
+                            <a href="YOUR_YOUTUBE_URL" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Watch Demo</a>
+                            -->
+                            <span class="btn-placeholder">Demo Video Coming Soon</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: RumahAman -->
+                    <article class="project-card reveal" data-category="web">
+                        <div class="project-top">
+                            <span class="project-badge">Project Lead</span>
+                            <span class="project-type">Progressive Web App</span>
+                        </div>
+                        <h3 class="project-title">RumahAman: Public Safety PWA</h3>
+                        <p class="project-desc">
+                            Serverless Progressive Web App aggregating and mapping public-safety and crime data across Malaysia with interactive geospatial visualization.
+                        </p>
+                        <ul class="project-points">
+                            <li>Integrated external REST APIs including Data.gov.my and Leaflet.js with IndexedDB/localStorage client-side storage.</li>
+                            <li>Resolved asynchronous JavaScript API race conditions and dynamic DOM-rendering conflicts during integration.</li>
+                        </ul>
+                        <div class="tag-list project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">IndexedDB</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">Leaflet.js</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://nshanthini394.github.io/CSM3103_Group-2_RumahAman/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live App</a>
+                            <a href="https://github.com/NShanthini394/CSM3103_Group-2_RumahAman" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Codebase</a>
+                            <!-- OPTIONAL YOUTUBE DEMO:
+                            <a href="YOUR_YOUTUBE_URL" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Watch Demo</a>
+                            -->
+                        </div>
+                    </article>
+
+                    <!-- Project 4: SweetBite Cookies -->
+                    <article class="project-card reveal" data-category="web">
+                        <div class="project-top">
+                            <span class="project-badge">Full-Stack Contributor</span>
+                            <span class="project-type">MVC Web App</span>
+                        </div>
+                        <h3 class="project-title">SweetBite Cookies: E-Commerce Platform</h3>
+                        <p class="project-desc">
+                            Dynamic e-commerce platform engineered with strict MVC architecture separating JSP frontend presentation from Java Servlet and MySQL backend operations.
+                        </p>
+                        <ul class="project-points">
+                            <li>Implemented automated order processing, total calculations, and live inventory updates using Servlets and SQL JOIN queries.</li>
+                            <li>Built user authentication, customer/admin role-based sessions, and database-driven discount validation.</li>
+                        </ul>
+                        <div class="tag-list project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Servlets &amp; JSP</span>
+                            <span class="tag">MVC</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://s74984.cursor.umt.edu.my/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live App</a>
+                            <a href="https://github.com/NShanthini394/CSM3023_Group-2_SweetBite-Cookies-Web-Application" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Codebase</a>
+                            <!-- WHEN YOUR YOUTUBE DEMO IS READY:
+                            <a href="YOUR_YOUTUBE_URL" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Watch Demo</a>
+                            -->
+                        </div>
+                    </article>
+
+                    <!-- Project 5: SisaSavvy -->
+                    <article class="project-card reveal" data-category="competition">
+                        <div class="project-top">
+                            <span class="project-badge">4th UXHMAC 2025</span>
+                            <span class="project-type">Product Concept &amp; Pitch</span>
+                        </div>
+                        <h3 class="project-title">SisaSavvy: AI Waste-Management Concept</h3>
+                        <p class="project-desc">
+                            Conceptualized an AI-driven waste-management mobile solution with a cross-functional team for the HUAWEI AppGallery Mobile App Competition.
+                        </p>
+                        <ul class="project-points">
+                            <li>Designed high-fidelity UI/UX mockups to illustrate user workflows and smart waste-sorting interactions.</li>
+                            <li>Prepared the business pitch deck communicating problem scope, value proposition, and product feasibility.</li>
+                        </ul>
+                        <div class="tag-list project-tags">
+                            <span class="tag">UI/UX Mockups</span>
+                            <span class="tag">AI Concept</span>
+                            <span class="tag">Product Pitch</span>
+                        </div>
+                        <div class="project-actions">
+                            <!-- OPTIONAL PITCH DECK / FIGMA LINK:
+                            <a href="YOUR_LINK" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View Pitch / Mockups</a>
+                            -->
+                            <span class="btn-placeholder">HUAWEI AppGallery Competition</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section section-alt" id="certifications">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Credentials</span>
+                    <h2 class="section-title">Certifications &amp; Training</h2>
+                    <p class="section-desc">Verified digital credentials earned through independent technical study.</p>
+                </div>
+
+                <div class="certs-grid">
+                    <article class="cert-card reveal">
+                        <div class="cert-meta">
+                            <span class="cert-issuer">Cisco Networking Academy</span>
+                            <span class="cert-date">October 2026</span>
+                        </div>
+                        <h3 class="cert-title">Introduction to Cybersecurity</h3>
+                        <p class="cert-desc">Foundational training covering threat landscapes, network defense principles, data protection, and security best practices.</p>
+                        <a href="https://www.credly.com/badges/7663c086-52bf-478f-9160-b7a6c7716d25/public_url" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            Verify Credential on Credly
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="cert-card reveal">
+                        <div class="cert-meta">
+                            <span class="cert-issuer">Cisco Networking Academy</span>
+                            <span class="cert-date">October 2026</span>
+                        </div>
+                        <h3 class="cert-title">Introduction to Modern AI</h3>
+                        <p class="cert-desc">Core concepts in modern artificial intelligence systems, practical generative AI workflows, and responsible application design.</p>
+                        <a href="https://www.credly.com/badges/646a8798-e0d3-4edb-9df3-4688d403d8d3/public_url" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            Verify Credential on Credly
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA Section -->
+        <section class="contact-band" id="contact">
+            <div class="container contact-inner reveal">
+                <span class="section-eyebrow light-eyebrow">Contact</span>
+                <h2 class="contact-title">Let's Connect for Internship Opportunities</h2>
+                <p class="contact-desc">
+                    Currently seeking a <strong>Software Engineering or General Technology Internship</strong>.
+                    Feel free to reach out via email or connect on LinkedIn and GitHub.
+                </p>
+
+                <div class="contact-actions">
+                    <a href="mailto:shanthininadeson394@gmail.com" class="btn btn-primary">
+                        shanthininadeson394@gmail.com
+                    </a>
+                    <a href="https://linkedin.com/in/shanthini-nadeson" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
+                        LinkedIn Profile
+                    </a>
+                    <a href="https://github.com/NShanthini394" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
+                        GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-brand"><strong>Shanthini Nadeson</strong> &middot; Georgetown, Penang, Malaysia</p>
+            <p class="footer-copy">&copy; <span id="currentYear"></span> Shanthini Nadeson. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
