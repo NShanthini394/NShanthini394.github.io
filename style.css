@@ -944,7 +944,7 @@ img {
 
 .project-points {
     padding-left: 18px;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
     color: var(--text-secondary);
     font-size: 0.9rem;
 }
@@ -954,11 +954,11 @@ img {
 }
 
 .project-tags {
-    margin-top: auto;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .project-actions {
+    margin-top: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
