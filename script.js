@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const html = document.documentElement;
+    const navbar = document.getElementById("navbar");
     const themeToggle = document.getElementById("themeToggle");
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
@@ -14,32 +15,75 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // 2. Dark / Light Mode Toggle with localStorage Persistence
+    const applyTheme = (theme) => {
+        html.setAttribute("data-theme", theme);
+        if (themeToggle) {
+            const nextLabel = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+            themeToggle.setAttribute("aria-label", nextLabel);
+            themeToggle.setAttribute("title", nextLabel);
+        }
+    };
+
     const savedTheme = localStorage.getItem("portfolio-theme");
     if (savedTheme === "dark" || savedTheme === "light") {
-        html.setAttribute("data-theme", savedTheme);
+        applyTheme(savedTheme);
     } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        html.setAttribute("data-theme", "dark");
+        applyTheme("dark");
+    } else {
+        applyTheme("light");
     }
 
-    themeToggle.addEventListener("click", () => {
-        const current = html.getAttribute("data-theme");
-        const next = current === "dark" ? "light" : "dark";
-        html.setAttribute("data-theme", next);
-        localStorage.setItem("portfolio-theme", next);
-    });
+    if (themeToggle) {
+        themeToggle.addEventListener("click", () => {
+            const current = html.getAttribute("data-theme");
+            const next = current === "dark" ? "light" : "dark";
+            applyTheme(next);
+            localStorage.setItem("portfolio-theme", next);
+        });
+    }
 
     // 3. Mobile Navigation Drawer
-    menuToggle.addEventListener("click", () => {
-        const isOpen = navLinks.classList.toggle("open");
-        menuToggle.setAttribute("aria-expanded", String(isOpen));
-    });
+    const closeMenu = () => {
+        if (!navLinks || !menuToggle) return;
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+    };
 
-    allNavLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-            navLinks.classList.remove("open");
-            menuToggle.setAttribute("aria-expanded", "false");
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener("click", () => {
+            const isOpen = navLinks.classList.toggle("open");
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
         });
-    });
+
+        allNavLinks.forEach((link) => {
+            link.addEventListener("click", closeMenu);
+        });
+
+        // Close drawer when tapping outside navbar
+        document.addEventListener("click", (event) => {
+            if (
+                navLinks.classList.contains("open") &&
+                navbar &&
+                !navbar.contains(event.target)
+            ) {
+                closeMenu();
+            }
+        });
+
+        // Close drawer with Escape key
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                closeMenu();
+            }
+        });
+
+        // Reset drawer state if resized back to laptop width
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 960) {
+                closeMenu();
+            }
+        });
+    }
 
     // 4. Active Nav Link Highlighting on Scroll
     const sections = document.querySelectorAll("section[id]");
